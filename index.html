@@ -56,7 +56,7 @@
     <section class="hero">
       <div class="container">
         <h1>Эффективные решения <br />для вашего бизнеса</h1>
-        <button type="button">Заказать услугу</button>
+        <button type="button" data-open-modal>Заказать услугу</button>
       </div>
     </section>
 
@@ -122,9 +122,24 @@
         <div class="container">
             <h2>Чем мы занимаемся</h2>
             <div class="images">
-                <img src="./images/img1_o.jpg" alt="programer-working-his-desk-office" />
-                <img src="./images/img2_o.jpg" alt="designers-are-developing-application-smartphones"/>
-                <img src="./images/img3_o.jpg" alt="web-design-with-working-colour-selection-graphic-tablete"/>
+                <div class="thumb">
+                    <img src="./images/img1_o.jpg" alt="programer-working-his-desk-office" />
+                    <div class="image-stick">
+                        <p>десктопные приложения</p>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <img src="./images/img2_o.jpg" alt="designers-are-developing-application-smartphones"/>
+                    <div class="image-stick">
+                        <p>мобильные приложения</p>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <img src="./images/img3_o.jpg" alt="web-design-with-working-colour-selection-graphic-tablete"/>
+                    <div class="image-stick">
+                        <p>дизайнерские решения </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -317,6 +332,18 @@
 
         </div>
     </section>
+
+    <!-- MODAL WINDOW -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-window">
+            <button data-modal-close>
+                close
+            </button>
+            <svg class="icon" style="width: 30px; height: 30px;">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </div>
+    </div>
     
     </main>
 
@@ -368,6 +395,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
 
 </body>
 
